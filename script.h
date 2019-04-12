@@ -1,3 +1,4 @@
+// QuickSort
 int* Swap(int* List, int x, int y){
 	int tmp = List[x];
 	List[x] = List[y];
