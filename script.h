@@ -17,3 +17,7 @@ int Partition(int* List, size_t len){
 	if(size--) Partition(List, size--);
 	return Search(List, len, pivot);
 }
+void QuickSort(int *List, size_t len){
+	int i = Partition(List, len);
+	Partition(List, i);
+}
