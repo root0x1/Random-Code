@@ -17,7 +17,7 @@ char** Swap(char** List, int x, int y){
 	return List;
 }
 void Sort(char** List, size_t len){
-	for(int i = 1; i < len; i++)
+	for(size_t i = 1; i < len; i++)
 		if(IsGreater(List[i], List[i-1]) == -1) Swap(List, i, i-1);
 	if(len--) Sort(List, len--);
 }
